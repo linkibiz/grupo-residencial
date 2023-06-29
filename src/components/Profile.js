@@ -35,7 +35,7 @@ const Profile = ({ profileData }) => {
           <div className="text-black w-full px-4 flex flex-col gap-y-3.5 items-center">
             {/* <Image src={Logo} height={100} width={100} /> */}
             <h1 className="font-bold text-4xl text-center">{nombre_apellido}</h1>
-            <p className="text-xs tracking-[3px] font-bold">{description}</p>
+            <p className="text-xs tracking-[3px] font-bold text-center">{description}</p>
           </div>
         </div>
       </div>
