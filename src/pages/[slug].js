@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Layout from "@/components/Layout";
 import Links from "@/components/Links";
 import Profile from "@/components/Profile";
+import QrImage from "@/components/QrImage";
 import SocialLinks from "@/components/SocialLinks";
 import Vcard from "@/components/Vcard";
 import Wrapper from "@/components/Wrapper";
@@ -20,7 +21,10 @@ const Perfil = ({ data }) => {
       <Banner />
       <Wrapper>
         <Profile profileData={data} />
-        <Vcard vcardData={data} />
+        <div className="flex w-full gap-4">
+          <Vcard vcardData={data} />
+          <QrImage value={slug} />
+        </div>
         <ContactButtons contactData={data} />
         <Links linksList={data.attributes.links} />
         <SocialLinks socialLinks={data.attributes.redes_sociales} />
