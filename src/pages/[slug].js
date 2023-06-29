@@ -24,7 +24,6 @@ const Perfil = ({ data }) => {
         <ContactButtons contactData={data} />
         <Links linksList={data.attributes.links} />
         <SocialLinks socialLinks={data.attributes.redes_sociales} />
-        <Footer/>
       </Wrapper>
     </Layout>
   );

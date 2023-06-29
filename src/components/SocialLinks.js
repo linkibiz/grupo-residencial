@@ -6,7 +6,7 @@ import LinkedinIcon from "./Icons/LinkedinIcon";
 import Link from "next/link";
 
 const SocialLinks = ({ socialLinks }) => {
-  const { facebook, instagram, linkedin, website  } = socialLinks;
+  const { facebook, instagram, linkedin, website } = socialLinks;
   console.log(socialLinks);
   const socialMediaPlatforms = [
     {
@@ -31,7 +31,7 @@ const SocialLinks = ({ socialLinks }) => {
     },
   ];
   return (
-    <>
+    <div className="flex flex-col justify-center items-center gap-5 absolute bottom-[5%]">
       <h2 className="font-bold">Síguenos en nuestras redes</h2>
       <ul className="flex gap-5 flex-wrap">
         {socialMediaPlatforms.map(({ platform, url, icon }) =>
@@ -42,7 +42,7 @@ const SocialLinks = ({ socialLinks }) => {
           ) : null
         )}
       </ul>
-    </>
+    </div>
   );
 };
 
