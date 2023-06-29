@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import QRCode from "qrcode.react";
 
-const URL = 'https://grupo-residencial.vercel.app/'
+const URL = 'https://gruporesidencial.linkibiz.cloud/'
 
 const QrImage = ({ value }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
