@@ -43,7 +43,7 @@ const ContactButtons = ({ contactData }) => {
             : dataItem?.url;
         return dataItem ? (
           <div className="flex flex-col items-center gap-2">
-            <a target="_blank" className=" h-16 w-16 bg-[#222222] p-4 rounded-full" href={ref}>
+            <a target="_blank" className=" h-16 w-16 bg-[#1B273D] p-4 rounded-full" href={ref}>
               {icon}
             </a>
             <p className="font-bold">{dataItem.titulo_de_boton}</p>

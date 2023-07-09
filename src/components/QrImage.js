@@ -16,7 +16,7 @@ const QrImage = ({ value }) => {
 
   return (
     <>
-      <button className="tracking-[0.07em] text-sm font-bold rounded-md border bg-[#222222] text-white p-3 w-full" onClick={openModal}>
+      <button className="tracking-[0.07em] text-sm font-bold rounded-md border bg-[#1B273D] text-white p-3 w-full" onClick={openModal}>
         Compartir perfil
       </button>
 

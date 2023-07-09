@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
-import Logo from "../../public/images/grupo-residencial-logo-dark.png";
+import Logo from "../../public/images/logodega.png";
 const Profile = ({ profileData }) => {
   const {
     nombre_apellido,
