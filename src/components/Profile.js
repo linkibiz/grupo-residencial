@@ -18,7 +18,7 @@ const Profile = ({ profileData }) => {
       <div className="-space-x-1 mt-[-45%] relative z-10 shadow-lg rounded-3xl">
         <div className="flex items-center bg-white rounded-3xl">
           <Image
-            className="rounded-l-3xl inline-block object-contain h-48 max-w-[50%]"
+            className="rounded-l-3xl inline-block object-contain h-48 max-w-[50%] p-3"
             src={Logo}
             width={500}
             height={500}
