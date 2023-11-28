@@ -9,7 +9,7 @@ const Layout = ({pageName, children}) => {
         <link rel='shortcut icon' href='/grupo-residencial-fav-icon.png'/>
       </Head>
       <main className="h-full bg-slate-100 min-h-screen flex justify-center">
-        <div className="bg-[#eceded] w-[425px] flex flex-col min-h-screen h-full overflow-hidden">
+        <div className="bg-[#231f20] w-[425px] flex flex-col min-h-screen h-full overflow-hidden">
           {children}    
         </div>
       </main>

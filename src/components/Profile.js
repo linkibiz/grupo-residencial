@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
-import Logo from "../../public/images/grupo-residencial-logo-dark.png";
+import Logo from "../../public/images/mmg-logo-negro.png";
 const Profile = ({ profileData }) => {
   const {
     nombre_apellido,
@@ -15,10 +15,10 @@ const Profile = ({ profileData }) => {
 
   return (
     <>
-      <div className="-space-x-1 mt-[-45%] relative z-10 shadow-lg rounded-3xl">
-        <div className="flex items-center bg-white rounded-3xl">
+      <div className="-space-x-1 mt-[-45%] relative z-10 shadow-md sha rounded-3xl">
+        <div className="flex items-center bg-transparent rounded-3xl">
           <Image
-            className="rounded-l-3xl inline-block object-contain h-48 max-w-[50%] p-3"
+            className="rounded-l-3xl inline-block object-contain h-48 max-w-[50%]"
             src={Logo}
             width={500}
             height={500}
@@ -32,10 +32,12 @@ const Profile = ({ profileData }) => {
             height={500}
             alt={`Foto de ${nombre_apellido}`}
           /> */}
-          <div className="text-black w-full flex flex-col items-start gap-y-3.5 p-5">
-            {/* <Image src={Logo} height={100} width={100} /> */}
-            <h1 className="font-bold text-3xl text-left">{nombre_apellido}</h1>
-            <p className="text-xs tracking-wider font-bold">{description}</p>
+          <div className="bg-white h-48 rounded-tr-lg rounded-br-lg">
+            <div className="text-black w-full flex flex-col items-start gap-y-3.5 p-5">
+              {/* <Image src={Logo} height={100} width={100} /> */}
+              <h1 className="font-bold text-3xl text-left">{nombre_apellido}</h1>
+              <p className="text-xs tracking-wider font-bold">{description}</p>
+            </div>
           </div>
         </div>
       </div>

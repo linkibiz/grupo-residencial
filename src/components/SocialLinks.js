@@ -32,11 +32,11 @@ const SocialLinks = ({ socialLinks }) => {
   ];
   return (
     <div className="flex flex-col justify-center items-center gap-5">
-      <h2 className="font-bold">Síguenos en nuestras redes</h2>
+      <h2 className="font-bold text-white">Síguenos en nuestras redes</h2>
       <ul className="flex gap-5 flex-wrap">
         {socialMediaPlatforms.map(({ platform, url, icon }) =>
           url ? (
-            <li className="bg-[#222222] rounded-xl p-2 flex justify-center items-center" key={platform}>
+            <li className="bg-[#FFF] rounded-xl p-2 flex justify-center items-center" key={platform}>
               <Link href={url}>{icon}</Link>
             </li>
           ) : null
